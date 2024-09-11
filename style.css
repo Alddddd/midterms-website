@@ -591,6 +591,22 @@ main {
     }
 }
 
+/* For screens smaller than 768px (tablets, phones in landscape) */
+@media screen and (max-width: 768px) {
+    .responsive-video {
+        width: 100%;  /* Reduce video size on smaller screens */
+        height: auto;
+    }
+}
+
+/* For screens smaller than 480px (phones in portrait) */
+@media screen and (max-width: 480px) {
+    .responsive-video {
+        width: 100%;  /* Full width for mobile devices */
+        height: auto;
+    }
+}
+
 .portfolio-box .portfolio-text .colored-btn {
     font-size: 12px;
 }
